@@ -31,7 +31,7 @@
 
 @font-face {
     font-family: "Akira";
-    src: url("AKIRA_EXPANDED_DEMO.OTF");
+    src: url("./AKIRA_EXPANDED_DEMO.OTF");
 }
 
 body{
@@ -57,7 +57,7 @@ body{
 }
 
 .about{
-    background-image: url("imgs/abstract.jpg");
+    background-image: url("./imgs/abstract.jpg");
     background-size: cover;
 }
 
