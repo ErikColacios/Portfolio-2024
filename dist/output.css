@@ -932,6 +932,10 @@ video {
   width: 100vw;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
