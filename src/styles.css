@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(56, 56, 56);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(7, 129, 48);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(3, 238, 81);
+  }
+
+@font-face {
+    font-family: "Akira";
+    src: url("/src/AKIRA_EXPANDED_DEMO.OTF");
+}
+
+body{
+    font-family: 'Figtree', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#colacios{
+    transition: 0.3s;
+}
+#colacios:hover{
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 10px rgb(3, 238, 81),
+    0 0 20px rgb(3, 238, 81),
+    0 0 40px rgb(3, 238, 81),
+    0 0 80px rgb(3, 238, 81),
+    0 0 120px rgb(3, 238, 81),
+    0 0 160px rgb(3, 238, 81); 
+}
+
+.about{
+    background-image: url("/src/imgs/abstract.jpg");
+    background-size: cover;
+}
+
+.presentation{
+    animation: aparecer1 auto linear;
+    animation-timeline: scroll(block);
+    animation-range: entry 2% cover 40%;
+    animation-fill-mode: both;
+}
+
+#progress{
+    animation: aparecer2 auto linear;
+    animation-timeline: scroll(block);
+    
+}
+
+
+@keyframes aparecer1 {
+    from {
+        opacity: 0%;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes aparecer2 {
+    0% {
+        opacity: 0%;
+        margin-top: 100%;
+        transform: translateY(100px);
+    }
+    75% {
+        opacity: 20%;
+        margin-top: 5%;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 100%;
+        margin-top: 0%;
+        transform: translateY(0px);
+    }
+}
+
+
+#progressBar{
+    animation: augmentar linear forwards;
+    animation-timeline: scroll(block);
+    animation-range: entry 60% cover 100%;
+    animation-fill-mode: both;
+}
+
+/* @keyframes augmentar {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+} */

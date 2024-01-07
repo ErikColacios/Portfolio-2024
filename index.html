@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Colacios | Portfolio</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="/src/index.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/src/imgs/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700&family=Inter&family=Montserrat:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---------------- NAVBAR ---------------------------->
+    <nav class="navbar w-screen h-24 bg-gray-700/40 text-white font-Akira fixed">
+        <ul class="flex w-full h-full items-center">
+            <div class="pl-4 fixed">
+                <li><button><img src="/src/imgs/erikcolacios_logo.png" alt="Logo" class="w-48"></button></li>
+            </div>
+            <div class="flex justify-center pl-20 hidden sm:flex space-x-8 text-xs lg:space-x-8 xl:space-x-12 2xl:space-x-20 w-full 2xl:pr-36 2xl:text-base">
+                <li><button class="transition hover:text-green-400"><a href="#home">HOME</a></button></li>
+                <li><button class="transition hover:text-green-400"><a href="#about">ABOUT</a></button></li>
+                <li><button class="transition hover:text-green-400">TIMELINE</button></li>
+                <li><button class="transition hover:text-green-400">TECHNOLOGIES</button></li>
+                <li><button class="transition hover:text-green-400">PROJECTS</button></li>
+                <li><button class="transition hover:text-green-400">CONTACT</button></li>
+            </div>
+            <div class="sm:hidden w-full">
+                <button id="burger" class="flex flex-col w-8 space-y-2 mr-14 float-right">
+                    <span class="w-full h-1 bg-white"></span>
+                    <span class="w-full h-1 bg-white"></span>
+                    <span class="w-full h-1 bg-white"></span>
+                </button>
+            </div>
+        </ul>
+        <div id="navItemsHidden" class="w-full hidden sm:hidden">
+            <ul class="flex flex-col float-right p-8 text-right text-2xl w-full bg-gray-700/40">
+                <li><button class="transition hover:text-green-400"><a href="#home">HOME</a></button></li>
+                <li><button class="transition hover:text-green-400"><a href="#about">ABOUT</a></button></li>
+                <li><button class="transition hover:text-green-400">TIMELINE</button></li>
+                <li><button class="transition hover:text-green-400">TECHNOLOGIES</button></li>
+                <li><button class="transition hover:text-green-400">PROJECTS</button></li>
+                <li><button class="transition hover:text-green-400">CONTACT</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!------------------- HOME ---------------------------->
+    <section id="home" class="inicio flex w-full h-screen items-center justify-center bg-black">
+        <div class="text-center pt-28">
+            <h1 class="font-Akira text-gray-700 text-5xl sm:text-6xl">ERIK</h1>
+            <h2 class="font-Akira text-gray-700 text-5xl sm:text-6xl" id="colacios">COLACIOS</h2>
+        </div>
+    </section>
+
+    <!------------------ ABOUT ---------------------------->
+    <section id="about" class="about w-full h-screen text-white flex flex-col md:flex-row justify-center items-center sm:justify-normal">
+        <div class="flex flex-col justify-center items-center p-4 lg:p-20 xl:p-36 xl:mr-36">
+            <div class="welcomeToMySpace items-center font-Akira w-80 sm:ml-48">
+                <h3 class="text-5xl sm:text-6xl sm:float-right">WELCOME</h3>
+                <div class="flex pl-5 mt-[-5px] sm:float-right">
+                    <div class="flex flex-col mr-4">
+                        <h3 class="mb-[-7px] text-sm">TO</h3>
+                        <h3 class="text-sm">MY</h3>
+                    </div>
+                    <h3 class="text-5xl sm:text-6xl mt-[-4px]">SPACE</h3>
+                </div>
+            </div>
+            <div class="presentation w-80 text-sm sm:w-[35rem] sm:text-base mt-8">
+                <p>Be welcome to my portfolio! I’m a developer based in Sant Quirze del Vallès (Barcelona) who loves designing creative applications and stunning websites, 
+                always keeping usability and scalability. My goal is to learn something new every day and being up to date in the world of tech, which never ceases blowing my mind.
+                </p>
+            </div>
+        </div>
+        <div class="rounded-full overflow-hidden w-80 sm:w-96 lg:w-80 lg:h-80 xl:w-96 xl:h-96 mt-12">
+            <img src="/src/imgs/erik_foto.jpeg" alt="Erik foto" class="w-96 h-full">
+        </div>
+    </section>
+
+    <!----------------- TIMELINE ------------------------------>
+    <section id="timeline" class="timeline w-full h-full bg-black flex flex-col text-white p-4 lg:p-28">
+        <h3 class="text-5xl sm:text-6xl font-Akira">TIMELINE</h3>
+        <span class="w-full h-1 bg-white"></span>
+        <div class="flex w-full flex-col lg:flex-row">
+            <div class="flex-auto">
+                <div class="w-[20rem] sm:w-[30rem] mt-8">
+                    <h3 class="font-Akira">ACADEMIC EXPERIENCE</h3>
+                    <div class="w-full h-1 bg-white mb-2"></div>
+        
+                    <div class="text-xl flex w-full mt-6">
+                        <div class="w-3 h-auto bg-gray-500 rounded mr-5" id="progressBar">
+                        </div>
+                        <div class="w-80 sm:w-96">
+                            <p class="mb-16 text-sm sm:text-lg">2017 - Bachillerato Humanístico</p>
+                            <p class="mb-16 text-sm sm:text-lg">2017 - B2 First in english (Cambridge)</p>
+                            <p class="mb-16 text-sm sm:text-lg">2019 - Superior degree ASIX (Network and computer system administration)</p>
+                            <p class="text-sm sm:text-lg">2021 - Superior degree DAW (Web development)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-auto mt-16 lg:mt-36 h-full">
+                <div class="w-[20rem] sm:w-[30rem] mt-8 text-right float-right">
+                    <h3 class="font-Akira">WORK EXPERIENCE</h3>
+                    <div class="w-full h-1 bg-white mb-2"></div>
+                    <div class="text-xl flex w-full mt-6 justify-end ">
+                        <div class="">
+                            <p class="mb-16 text-sm sm:text-lg">2018 - Zontisa Smart Technology</p>
+                            <p class="mb-16 text-sm sm:text-lg">2020 - Insercad Electrónica</p>
+                            <p class="mb-16 text-sm sm:text-lg">2020 - Mukanë Agency</p>
+                            <p class="text-sm sm:text-lg">2022 - CEGID Ekon <label class="ml-4 text-purple-400 font-bold"> CURRENTLY</label></p>
+                        </div>
+                        <div class="w-2 h-auto bg-gray-500 rounded ml-5" id="progressBar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------- PROJECTS ------------------------------>
+    <section class="timeline w-full h-full bg-black flex flex-col text-white p-4 xl:p-28">
+        <h3 class="text-4xl sm:text-6xl font-Akira">PROJECTS</h3>
+        <span class="w-full h-1 bg-white"></span>
+        <div class="w-full h-full mt-8  flex flex-col lg:flex-row">
+            <div class="flex flex-col">
+                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 p-4 rounded-2xl items-center outline bg-gray-600 text-sm xl:text-base" id="divVideo1">
+                    <img src="/src/imgs/fustadecor_icon.png" class="w-8 sm:w-16 2xl:w-24" alt="Fustadecor icon">
+                    <div class="w-48">
+                        <p class="pl-8 pr-8">Fustadecor</p>
+                    </div>
+                    <button class="bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded">View</button>
+                    <button class="bg-gray-700 hover:bg-sky-500 transition w-24 p-2 rounded">GitHub</button>
+                </div>
+                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-800 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo2">
+                    <img src="/src/imgs/onepieceapp_icon.png" class="w-8 sm:w-16 2xl:w-24" alt="One Piece App icon">
+                    <div class="w-48">
+                        <p class="pl-8 pr-8">OnePiece App</p>
+                    </div>
+                    <button class="bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded">View</button>
+                    <button class="bg-gray-700 hover:bg-sky-500 transition w-24 p-2 rounded">GitHub</button>
+                </div>
+                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-800 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo3">
+                    <img src="/src/imgs/randompass_icon.png" class="w-8 sm:w-16 2xl:w-24" alt="RandomPass icon">
+                    <div class="w-48">
+                        <p class="pl-8 pr-8">RandomPass</p>
+                    </div>
+                    <button class="bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded">View</button>
+                    <button class="bg-gray-700 hover:bg-sky-500 transition w-24 p-2 rounded">GitHub</button>
+                </div>
+                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-800 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo4">
+                    <img src="/src/imgs/greendrop_icon.png" class="w-8 sm:w-16 2xl:w-24" alt="Greendrop icon">
+                    <div class="w-48">
+                        <p class="pl-8 pr-8">Greendrop</p>
+                    </div>
+                    <button class="bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded">View</button>
+                    <button class="bg-gray-700 hover:bg-sky-500 transition w-24 p-2 rounded">GitHub</button>
+                </div>
+            </div>
+            <div class="w-full h-[17rem] sm:h-full lg:ml-8 rounded-lg">
+                <video src="/src/videos/fustadecor_video.mp4" class="w-full h-full" id="videoPantalla" loop autoplay muted></video>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
