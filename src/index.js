@@ -24,48 +24,32 @@ burger.addEventListener("click",()=>{
 
 divVideo1.addEventListener("click",()=>{
     divVideo2.classList.remove("outline");
-    divVideo2.classList.replace("bg-gray-600", "bg-gray-800");
     divVideo3.classList.remove("outline");
-    divVideo3.classList.replace("bg-gray-600", "bg-gray-800");
     divVideo4.classList.remove("outline");
-    divVideo4.classList.replace("bg-gray-600", "bg-gray-800");
     video.src = "/src/videos/fustadecor_video.mp4";
     divVideo1.classList.add("outline");
-    divVideo1.classList.replace("bg-gray-800", "bg-gray-600");
 })
 
 divVideo2.addEventListener("click",()=>{
     divVideo1.classList.remove("outline");
-    divVideo1.classList.replace("bg-gray-600", "bg-gray-800");
     divVideo3.classList.remove("outline");
-    divVideo3.classList.replace("bg-gray-600", "bg-gray-800");
     divVideo4.classList.remove("outline");
-    divVideo4.classList.replace("bg-gray-600", "bg-gray-800");
     video.src = "/src/videos/onepieceapp_video.mp4";
     divVideo2.classList.add("outline");
-    divVideo2.classList.replace("bg-gray-800", "bg-gray-600");
 })
 
 divVideo3.addEventListener("click",()=>{
     divVideo1.classList.remove("outline");
-    divVideo1.classList.replace("bg-gray-600", "bg-gray-800");
     divVideo2.classList.remove("outline");
-    divVideo2.classList.replace("bg-gray-600", "bg-gray-800");
     divVideo4.classList.remove("outline");
-    divVideo4.classList.replace("bg-gray-600", "bg-gray-800");
     video.src = "/src/videos/randompass_video.mp4";
     divVideo3.classList.add("outline");
-    divVideo3.classList.replace("bg-gray-800", "bg-gray-600");
 })
 
 divVideo4.addEventListener("click",()=>{
     divVideo1.classList.remove("outline");
-    divVideo1.classList.replace("bg-gray-600", "bg-gray-800");
     divVideo2.classList.remove("outline");
-    divVideo2.classList.replace("bg-gray-600", "bg-gray-800");
     divVideo3.classList.remove("outline");
-    divVideo3.classList.replace("bg-gray-600", "bg-gray-800");
     video.src = "/src/videos/greendrop_video.mp4";
     divVideo4.classList.add("outline");
-    divVideo4.classList.replace("bg-gray-800", "bg-gray-600");
 })

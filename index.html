@@ -13,7 +13,7 @@
 </head>
 <body>
     <!---------------- NAVBAR ---------------------------->
-    <nav class="navbar w-screen h-24 bg-gray-700/40 text-white font-Akira fixed">
+    <nav class="navbar w-screen h-24 bg-black/90 sm:bg-gray-700/40 text-white font-Akira fixed">
         <ul class="flex w-full h-full items-center">
             <div class="pl-4 fixed">
                 <li><button><img src="/src/imgs/erikcolacios_logo.png" alt="Logo" class="w-48"></button></li>
@@ -25,6 +25,7 @@
                 <li><button class="transition hover:text-green-400">TECHNOLOGIES</button></li>
                 <li><button class="transition hover:text-green-400"><a href="#projects">PROJECTS</a></button></li>
                 <li><button class="transition hover:text-green-400">CONTACT</button></li>
+                <li><button class="transition text-green-400 hover:text-green-600"><a href="src/cv.pdf" download="CV Erik">DOWNLOAD CV</a></button></li>
             </div>
             <div class="sm:hidden w-full">
                 <button id="burger" class="flex flex-col w-8 space-y-2 mr-14 float-right">
@@ -35,13 +36,14 @@
             </div>
         </ul>
         <div id="navItemsHidden" class="w-full hidden sm:hidden">
-            <ul class="flex flex-col float-right p-8 text-right text-2xl w-full bg-gray-700/40">
+            <ul class="flex flex-col float-right p-8 text-right text-2xl w-full bg-black/90">
                 <li><button class="transition hover:text-green-400"><a href="#home">HOME</a></button></li>
                 <li><button class="transition hover:text-green-400"><a href="#about">ABOUT</a></button></li>
                 <li><button class="transition hover:text-green-400"><a href="#timeline">TIMELINE</a></button></li>
                 <li><button class="transition hover:text-green-400">TECHNOLOGIES</button></li>
                 <li><button class="transition hover:text-green-400"><a href="#projects">PROJECTS</a></button></li>
                 <li><button class="transition hover:text-green-400">CONTACT</button></li>
+                <li><button class="transition text-green-400 hover:text-green-600"><a href="src/cv.pdf" download="CV Erik">DOWNLOAD CV</a></button></li>
             </ul>
         </div>
     </nav>
@@ -80,7 +82,7 @@
 
     <!----------------- TIMELINE ------------------------------>
     <section id="timeline" class="timeline w-full h-full bg-black flex flex-col text-white p-4 lg:p-28">
-        <h3 class="text-5xl sm:text-6xl font-Akira">TIMELINE</h3>
+        <h3 class="text-4xl sm:text-6xl font-Akira">TIMELINE</h3>
         <span class="w-full h-1 bg-white"></span>
         <div class="flex w-full flex-col lg:flex-row">
             <div class="flex-auto">
@@ -119,42 +121,42 @@
     </section>
 
     <!----------------- PROJECTS ------------------------------>
-    <section id="projects" class="timeline w-full h-full bg-black flex flex-col text-white p-4 xl:p-28">
+    <section id="projects" class="timeline w-full h-full bg-black flex flex-col text-white p-4 pt-20 xl:p-28">
         <h3 class="text-4xl sm:text-6xl font-Akira">PROJECTS</h3>
         <span class="w-full h-1 bg-white"></span>
         <div class="w-full h-full mt-8  flex flex-col lg:flex-row">
             <div class="flex flex-col">
-                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 p-4 rounded-2xl items-center outline bg-gray-600 text-sm xl:text-base" id="divVideo1">
+                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 p-4 rounded-2xl items-center outline bg-gray-900/90 text-sm xl:text-base" id="divVideo1">
                     <img src="/src/imgs/fustadecor_icon.png" class="w-8 sm:w-16 2xl:w-24" alt="Fustadecor icon">
                     <div class="w-48">
                         <p class="pl-8 pr-8">Fustadecor</p>
                     </div>
-                    <button class="bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded">View</button>
-                    <button class="bg-gray-700 hover:bg-sky-500 transition w-24 p-2 rounded">GitHub</button>
-                </div>
-                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-800 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo2">
+                    <button class="flex justify-center items-center bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded"><a href="https://www.fustadecor.es" target="_blank" class="flex"><img src="/src/imgs/lupa_icon.png" class="w-4 sm:w-auto" alt="Lupa icon">View</a></button>  
+                    <button class="flex justify-center items-center bg-gray-700 hover:bg-sky-500 transition p-2 rounded"><a href="https://github.com/ErikColacios/Fustadecor" target="_blank"><img src="/src/imgs/github_icon.png" class="w-4 sm:w-auto" alt="Github icon"></a></button>
+                </div>  
+                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-900/90 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo2">
                     <img src="/src/imgs/onepieceapp_icon.png" class="w-8 sm:w-16 2xl:w-24" alt="One Piece App icon">
                     <div class="w-48">
                         <p class="pl-8 pr-8">OnePiece App</p>
                     </div>
-                    <button class="bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded">View</button>
-                    <button class="bg-gray-700 hover:bg-sky-500 transition w-24 p-2 rounded">GitHub</button>
+                    <button class="flex justify-center items-center bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded"><a class="flex"><img src="/src/imgs/lupa_icon.png" class="w-4 sm:w-auto" alt="Lupa icon">View</a></button>  
+                    <button class="flex justify-center items-center bg-gray-700 hover:bg-sky-500 transition p-2 rounded"><a href="https://github.com/ErikColacios/OnePiece" target=”_blank”><img src="/src/imgs/github_icon.png" class="w-4 sm:w-auto" alt="Github icon"></a></button>
                 </div>
-                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-800 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo3">
+                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-900/90 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo3">
                     <img src="/src/imgs/randompass_icon.png" class="w-8 sm:w-16 2xl:w-24" alt="RandomPass icon">
                     <div class="w-48">
                         <p class="pl-8 pr-8">RandomPass</p>
                     </div>
-                    <button class="bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded">View</button>
-                    <button class="bg-gray-700 hover:bg-sky-500 transition w-24 p-2 rounded">GitHub</button>
+                    <button class="flex justify-center items-center bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded"><a href="https://random-pass-njouzht0r-erikcolacios-projects.vercel.app" target="_blank" class="flex"><img src="/src/imgs/lupa_icon.png" class="w-4 sm:w-auto" alt="Lupa icon">View</a></button>  
+                    <button class="flex justify-center items-center bg-gray-700 hover:bg-sky-500 transition p-2 rounded"><a href="https://github.com/ErikColacios/RandomPass" target=”_blank”><img src="/src/imgs/github_icon.png" class="w-4 sm:w-auto" alt="Github icon"></a></button>
                 </div>
-                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-800 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo4">
+                <div class="flex w-full lg:w-[30rem] 2xl:w-[40rem] h-20 sm:h-24 2xl:h-32 mb-4 bg-gray-900/90 p-4 rounded-2xl items-center text-sm xl:text-base" id="divVideo4">
                     <img src="/src/imgs/greendrop_icon.png" class="w-8 sm:w-16 2xl:w-24" alt="Greendrop icon">
                     <div class="w-48">
                         <p class="pl-8 pr-8">Greendrop</p>
                     </div>
-                    <button class="bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded">View</button>
-                    <button class="bg-gray-700 hover:bg-sky-500 transition w-24 p-2 rounded">GitHub</button>
+                    <button class="flex justify-center items-center bg-gray-700 hover:bg-lime-400 transition w-24 p-2 mr-4 rounded"><a class="flex"><img src="/src/imgs/lupa_icon.png" class="w-4 sm:w-auto" alt="Lupa icon">View</a></button>  
+                    <button class="flex justify-center items-center bg-gray-700 hover:bg-sky-500 transition p-2 rounded"><a href="https://github.com/ErikColacios/Greendrop" target=”_blank”><img src="/src/imgs/github_icon.png" class="w-4 sm:w-auto" alt="Github icon"></a></button>
                 </div>
             </div>
             <div class="w-full h-[17rem] sm:h-full lg:ml-8 rounded-lg">
