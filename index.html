@@ -357,5 +357,39 @@
             </div>
         </div>
     </section>
+
+    <!----------------- CONTACT ------------------------------>
+    <section id="contact" class="timeline w-full h-full bg-black flex flex-col text-white p-4 pt-20 xl:p-28">
+        <h3 class="text-5xl sm:text-6xl font-Akira">CONTACT</h3>
+        <span class="w-full h-1 bg-white"></span>
+        <div class="flex flex-col md:flex-row w-full mt-8 space-x-20">
+            <div>
+                <p>Thank you for getting this far!</p>
+                <p>You can contact me through my LinkedIn, email, phone or WhatsApp.</p>
+                <p>Or if you prefer you can use the form below to send me an email more quickly.</p>
+            </div>
+            <div class="flex space-x-8 mt-4 md:mt-0">
+                <img src="/src/imgs/linkedin_logo.png" alt="LinkedIn logo" class="w-16 md:w-24">
+                <img src="/src/imgs/whatsapp_logo.png" alt="WhatsApp logo" class="w-16 md:w-24">
+                <img src="/src/imgs/telefono_icono.png" alt="Telefono icono" class="w-16 md:w-24">
+            </div>
+
+        </div>
+        <div>
+            <form action="POST" class="flex flex-col">
+                <div class="flex mt-12">
+                    <input type="text" placeholder="Name*" class="w-1/2 outline outline-1 outline-white bg-black p-4">
+                    <input type="text" placeholder="Company*" class="w-1/2 outline outline-1 outline-white bg-black p-4 ml-2">
+                </div>
+                <div class="flex mt-6">
+                    <input type="number" placeholder="Phone*" class="w-1/2 outline outline-1 outline-white bg-black p-4">
+                    <input type="email" placeholder="Email*" class="w-1/2 outline outline-1 outline-white bg-black p-4 ml-2">
+                </div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message*" class="w-full mt-6 outline outline-1 outline-white bg-black p-4""></textarea>
+
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>
