@@ -60,7 +60,6 @@ body{
 .about{
     background-image: url("/src/imgs/abstract.jpg");
     background-size: cover;
-    background-position: top;
 }
 
 .presentation{
