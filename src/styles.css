@@ -127,3 +127,21 @@ body{
     background-image: url("/src/imgs/abstract2.jpg");
     background-size: cover;
 }
+
+textarea{
+    resize: none;
+}
+
+
+/* REMOVE ARROWS FROM INPUT TYPE NUMBER */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
