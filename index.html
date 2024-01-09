@@ -24,7 +24,7 @@
                 <li><button class="transition hover:text-green-400"><a href="#timeline">TIMELINE</a></button></li>
                 <li><button class="transition hover:text-green-400"><a href="#technologies">TECHNOLOGIES</a></button></li>
                 <li><button class="transition hover:text-green-400"><a href="#projects">PROJECTS</a></button></li>
-                <li><button class="transition hover:text-green-400">CONTACT</button></li>
+                <li><button class="transition hover:text-green-400"><a href="#contact">CONTACT</a></button></li>
                 <li><button class="transition text-green-400 hover:text-green-600"><a href="src/cv.pdf" download="CV Erik">DOWNLOAD CV</a></button></li>
             </div>
             <div class="md:hidden w-full">
@@ -42,7 +42,7 @@
                 <li><button class="transition hover:text-green-400"><a href="#timeline">TIMELINE</a></button></li>
                 <li><button class="transition hover:text-green-400"><a href="#technologies">TECHNOLOGIES</a></button></li>
                 <li><button class="transition hover:text-green-400"><a href="#projects">PROJECTS</a></button></li>
-                <li><button class="transition hover:text-green-400">CONTACT</button></li>
+                <li><button class="transition hover:text-green-400"><a href="#contact">CONTACT</a></button></li>
                 <li><button class="transition text-green-400 hover:text-green-600"><a href="src/cv.pdf" download="CV Erik">DOWNLOAD CV</a></button></li>
             </ul>
         </div>
@@ -352,8 +352,10 @@
                     <button class="flex justify-center items-center bg-gray-700 hover:bg-sky-500 transition p-2 rounded"><a href="https://github.com/ErikColacios/Greendrop" target=”_blank”><img src="/src/imgs/github_icon.png" class="w-4 sm:w-auto" alt="Github icon"></a></button>
                 </div>
             </div>
+
+            <!-- Video -->
             <div class="w-full h-[17rem] sm:h-full lg:ml-8 rounded-lg">
-                <video src="/src/videos/fustadecor_video.mp4" class="w-full h-full" id="videoPantalla" loop autoplay muted></video>
+                <video src="/src/videos/fustadecor_video.mp4" class="w-full h-full bg-black" id="videoPantalla" loop autoplay muted></video>
             </div>
         </div>
     </section>
@@ -362,18 +364,29 @@
     <section id="contact" class="timeline w-full h-full bg-black flex flex-col text-white p-4 pt-20 xl:p-28">
         <h3 class="text-5xl sm:text-6xl font-Akira">CONTACT</h3>
         <span class="w-full h-1 bg-white"></span>
-        <div class="flex flex-col md:flex-row w-full mt-8 space-x-20">
+
+        <div class="flex flex-col lg:flex-row w-full mt-8 lg:space-x-20">
             <div>
-                <p>Thank you for getting this far!</p>
-                <p>You can contact me through my LinkedIn, email, phone or WhatsApp.</p>
+                <p>Thank you for getting this far!
+                You can contact me through my LinkedIn, email, phone or WhatsApp.</p>
                 <p>Or if you prefer you can use the form below to send me an email more quickly.</p>
             </div>
-            <div class="flex space-x-8 mt-4 md:mt-0">
-                <img src="/src/imgs/linkedin_logo.png" alt="LinkedIn logo" class="w-16 md:w-24">
-                <img src="/src/imgs/whatsapp_logo.png" alt="WhatsApp logo" class="w-16 md:w-24">
-                <img src="/src/imgs/telefono_icono.png" alt="Telefono icono" class="w-16 md:w-24">
-            </div>
+            <div class="flex lg:flex-row space-x-8 mt-4 md:mt-0">
+                <div class="flex flex-row space-x-8">
+                    <a href="https://www.linkedin.com/in/erik-colacios-garcia-40b5521b9" target="_blank"><img src="/src/imgs/linkedin_logo.png" alt="LinkedIn logo" class="w-16 md:w-24"></a>
+                    <a href="https://wa.me/679351989" target="_blank"><img src="/src/imgs/whatsapp_logo.png" alt="WhatsApp logo" class="w-16 md:w-24"></a>
+                </div>
 
+                <!-- Telephone and email -->
+                <div class="flex flex-col md:space-y-6">
+                    <div class="flex items-center">
+                        <img src="/src/imgs/telefono_icono.png" alt="Telefono icon" class="w-8 md:w-8"><lablel class="ml-3"> +34 679 351 989</lablel>
+                    </div>
+                    <div class="flex items-center mt-2 md:mt-0">
+                        <img src="/src/imgs/email_icono.png" alt="Email icon" class="w-8 md:w-8"><lablel class="ml-3"> ecolaciosgarcia@gmail.com</lablel>
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
             <form action="POST" class="flex flex-col">
@@ -385,11 +398,9 @@
                     <input type="number" placeholder="Phone*" class="w-1/2 outline outline-1 outline-white bg-black p-4">
                     <input type="email" placeholder="Email*" class="w-1/2 outline outline-1 outline-white bg-black p-4 ml-2">
                 </div>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message*" class="w-full mt-6 outline outline-1 outline-white bg-black p-4""></textarea>
-
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message*" class="w-full mt-6 outline outline-1 outline-white bg-black p-4"></textarea>
             </form>
         </div>
     </section>
-
 </body>
 </html>
