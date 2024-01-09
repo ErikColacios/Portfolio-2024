@@ -34,6 +34,7 @@
     src: url("/src/AKIRA_EXPANDED_DEMO.OTF");
 }
 
+
 body{
     font-family: 'Figtree', sans-serif;
     font-family: 'Inter', sans-serif;
@@ -59,6 +60,7 @@ body{
 .about{
     background-image: url("/src/imgs/abstract.jpg");
     background-size: cover;
+    background-position: top;
 }
 
 .presentation{
@@ -75,7 +77,7 @@ body{
 }
 
 
-@keyframes aparecer1 {
+/* @keyframes aparecer1 {
     from {
         opacity: 0%;
         transform: translateY(100px);
@@ -110,7 +112,7 @@ body{
     animation-timeline: scroll(block);
     animation-range: entry 60% cover 100%;
     animation-fill-mode: both;
-}
+} */
 
 /* @keyframes augmentar {
     from {

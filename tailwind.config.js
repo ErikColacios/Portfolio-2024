@@ -7,6 +7,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       Akira: ["Akira", "sans-serif"],
+      Poppins: ["Poppins", "sans-serif"]
     }
   },
   plugins: [],
