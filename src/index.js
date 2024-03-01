@@ -72,7 +72,7 @@ function sendEmail() {
     const bodyMessage = `Name: ${contact_name.value} <br>
                         Company: ${contact_company.value} <br>
                         Phone: ${contact_phone.value} <br>
-                        Email: ${contact_company.value} <br>
+                        Email: ${contact_email.value} <br>
                         Message: ${contact_message.value}`;
 
     Email.send({
