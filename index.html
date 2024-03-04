@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erik Colacios | Portfolio</title>
     <link href="/dist/output.css" rel="stylesheet">
-    <script src="/src/index.js" defer></script>
+    <script src="/src/index.js" type="module" defer></script>
     <link rel="icon" type="image/x-icon" href="/src/imgs/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700&family=Inter&family=Montserrat:wght@900&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Script used to send mails with SMTP.JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <!---------------- NAVBAR ---------------------------->
@@ -403,9 +406,6 @@
             <button type="submit" class="w-full sm:w-96 mt-6 outline outline-1 outline-white bg-black p-4 transition hover:bg-white hover:text-black">SUBMIT</button>
         </form>
     </section>
-
-    <!-- Script used to send mails with SMTP.JS -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 <!---------------------- FOOTER ------------------------------------>

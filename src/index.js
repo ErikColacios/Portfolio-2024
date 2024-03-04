@@ -69,11 +69,11 @@ const contact_message = document.getElementById("contact_message")
  * https://app.elasticemail.com/
  */
 function sendEmail() {
-    const bodyMessage = `Name: ${contact_name.value} <br>
-                        Company: ${contact_company.value} <br>
-                        Phone: ${contact_phone.value} <br>
+    const bodyMessage = `Nombre: ${contact_name.value} <br>
+                        Compañia: ${contact_company.value} <br>
+                        Telefono: ${contact_phone.value} <br>
                         Email: ${contact_email.value} <br>
-                        Message: ${contact_message.value}`;
+                        Mensaje: ${contact_message.value}`;
 
     Email.send({
         SecureToken: "e6b27b97-aa41-4b61-8d75-9968e5d18cb2",
@@ -82,12 +82,23 @@ function sendEmail() {
         Subject : "Mensaje desde mi portfolio",
         Body : bodyMessage
     }).then(
-      message => alert(message)
+        message => Swal.fire({
+            title: "Message sent!",
+            text: "Thank you for your time <3",
+            background: "#d4ff90",
+            icon: "success",
+            iconColor: "#339933",
+            confirmButtonColor: "#21c221",
+            confirmButtonText: "Accept",
+            confirmButtonTextColor: "#FFFFFF",
+            focusConfirm: false,
+          })
+
+
     );
 }
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-
     sendEmail();
 })
